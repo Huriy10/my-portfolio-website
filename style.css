@@ -1,0 +1,111 @@
+body {
+    background-color:pink;
+    font-family: 'Segoe UI' , sans-serif;
+    margin 20px;
+}
+
+nav {
+    background-color:rgb(233, 112, 207);
+    padding: 10px;
+}
+
+nav a { 
+    text-decoration: none;
+    color:deeppink;
+    font-weight: bold;
+    font-size: large;
+    margin-right: 15px;
+}
+
+h1 {
+    color:deeppink;
+}
+
+img {
+    border-radius: 10px;
+    border: 3px solid deeppink;
+    width: 250px;
+}
+
+form {
+    background-color:palevioletred;
+    padding: 20px;
+    border-radius: 5px;
+    max-width: 400px;
+}
+
+button {
+    background: pink;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+Nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.projectgallery {
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.projectcard {
+    background-color:lightgrey;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px
+}
+
+.project-header{
+    text-align: center;
+    margin: 40px 0;
+}
+.project-card img{
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border: none;
+    border-radius: 0;
+}
+.project-content{
+    padding: 20px;
+}
+.project-content button {
+    margin-top: 10px;
+}
+
+@media (min-width: 801px) {
+    .project-gallery {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+media (min-width: 601px) and (max-width: 800px) {
+    nav a {
+        margin-right: 10px;
+    }
+    .project-gallery {
+        grid-template-columns: repeat(2, 1fr);
+}
+
+@media (max-width: 600px) {
+    nav{
+        flex-direction: column;
+        align-items: center;
+    }
+    nav a {
+        margin: 5px 0;
+    }
+}
+.project-gallery {
+        grid-template-columns: repeat(1, 1fr);
+}
+.project-card{
+    text-align: center;
+}
+}
